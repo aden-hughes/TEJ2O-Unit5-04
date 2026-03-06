@@ -19,7 +19,6 @@ myNeopixelStrip.show()
 basic.showIcon(IconNames.Happy)
 
 // running the traffic lights
-basic.clearScreen()
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Square)
 
@@ -53,7 +52,6 @@ input.onButtonPressed(Button.A, function () {
 })
 
 // resetting the traffic lights
-basic.clearScreen()
 input.onButtonPressed(Button.B, function () {
     myNeopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
     myNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
